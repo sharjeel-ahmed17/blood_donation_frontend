@@ -8,6 +8,8 @@ const Login = () => {
       <p>shad cn ui setup</p>
 
       <Button>click me</Button>
+
+      <p>sharjeel ahmed this is me</p>
     </div>
   )
 }
