@@ -1,7 +1,7 @@
 import { VitePWA } from 'vite-plugin-pwa';
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
-
+import path from "path"
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), VitePWA({
@@ -14,9 +14,9 @@ export default defineConfig({
     },
 
     manifest: {
-      name: 'blood_donation',
-      short_name: 'bd',
-      description: 'this is simple blood donation web app',
+      name: 'frontend',
+      short_name: 'blood_donor_app',
+      description: 'this is simple app',
       theme_color: '#ffffff',
     },
 
@@ -33,4 +33,9 @@ export default defineConfig({
       type: 'module',
     },
   })],
+  resolve: {
+    alias: {
+      '@': path.resolve(__dirname, './src'),
+    },
+  },
 })
