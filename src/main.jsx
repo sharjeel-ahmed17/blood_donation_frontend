@@ -6,7 +6,9 @@ import { BrowserRouter } from 'react-router'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 <BrowserRouter>
-<App />
+<div className='max-w-[1200px] mx-auto'>
+    <App />
+</div>
 
 </BrowserRouter>
   
