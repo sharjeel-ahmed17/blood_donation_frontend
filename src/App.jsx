@@ -6,17 +6,19 @@ import Home from "./pages/home";
 import DonorListing from "./pages/donor";
 import Chat from "./pages/cat";
 import AdminDashboard from "./pages/admin";
+import Header from "./components/common/header/Header";
 const App = () => {
   return (
     <Routes>
+
       <Route path="/" element={<Home />} />
       <Route path="/admin" element={<AdminDashboard />} />
-      <Route path="/login" element={<Login/>} />
-      <Route path="/signup" element={<Signup/>} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
       <Route path="/register" element={"register"} />
-      
-<Route path="/donor" element={<DonorListing />} />
-      <Route path="/chat" element={<Chat/>} />
+
+      <Route path="/donor" element={<DonorListing />} />
+      <Route path="/chat" element={<Chat />} />
       <Route path="*" element={"not found"} />
       {/* <Route path="/" element={<Home />} /> */}
     </Routes>

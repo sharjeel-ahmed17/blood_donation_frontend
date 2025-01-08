@@ -1,9 +1,11 @@
 import React from 'react';
 import { Heart, Calendar, Users, Clock, ArrowRight, Phone } from 'lucide-react';
+import Header from '@/components/common/header/Header';
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-white">
+      <Header/>
       {/* Hero Section */}
       <header className="bg-red-50 py-16">
         <div className="container mx-auto px-4">

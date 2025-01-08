@@ -192,7 +192,10 @@ const DonorListing = () => {
                     </div>
 
                     <button className="w-full bg-red-600 text-white py-2 rounded-lg hover:bg-red-700 transition">
+                      <a href="/chat">
+                      
                       Contact Donor
+                      </a>
                     </button>
                   </div>
                 </div>
