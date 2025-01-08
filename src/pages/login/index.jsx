@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '@/components/ui/card';
 import { Alert, AlertDescription } from '@/components/ui/alert';
+import { Input } from '@/components/ui/input';
+import { Label } from '@/components/ui/label';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -28,13 +30,13 @@ const Login = () => {
         <CardContent>
           <form onSubmit={handleSubmit} className="space-y-4">
             <div>
-              <label className="block text-sm font-medium mb-1">Donor ID</label>
-              <input
+              <Label htmlFor="email" className="block text-sm font-medium mb-1">Email</Label>
+              <Input
                 type="text"
                 value={formData.donorId}
                 onChange={(e) => setFormData({...formData, donorId: e.target.value})}
                 className="w-full p-2 border rounded-md"
-                placeholder="Enter your donor ID"
+                placeholder="Enter your Email"
               />
             </div>
 

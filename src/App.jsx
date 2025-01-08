@@ -2,15 +2,21 @@ import React from "react";
 import Login from "./pages/login";
 import { Routes, Route } from "react-router";
 import Signup from "./pages/signup";
+import Home from "./pages/home";
+import DonorListing from "./pages/donor";
+import Chat from "./pages/cat";
+import AdminDashboard from "./pages/admin";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={"home page"} />
+      <Route path="/" element={<Home />} />
+      <Route path="/admin" element={<AdminDashboard />} />
       <Route path="/login" element={<Login/>} />
       <Route path="/signup" element={<Signup/>} />
       <Route path="/register" element={"register"} />
-      <Route path="/donor" element={"donor"} />
-      <Route path="/receiver" element={"receiver"} />
+      
+<Route path="/donor" element={<DonorListing />} />
+      <Route path="/chat" element={<Chat/>} />
       <Route path="*" element={"not found"} />
       {/* <Route path="/" element={<Home />} /> */}
     </Routes>

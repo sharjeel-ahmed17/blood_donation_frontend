@@ -51,7 +51,7 @@ const SignUp = () => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">Email</label>
+              <Label htmlFor='email' className="block text-sm font-medium mb-1">Email</Label>
               <Input
                 type="email"
                 value={formData.email}
@@ -62,7 +62,7 @@ const SignUp = () => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">Password</label>
+              <Label htmlFor='password' className="block text-sm font-medium mb-1">Password</Label>
               <Input
                 type="password"
                 value={formData.password}
@@ -73,7 +73,7 @@ const SignUp = () => {
             </div>
 
             <div>
-              <label className="block text-sm font-medium mb-1">Confirm Password</label>
+              <Label htmlFor='confirmPassword' className="block text-sm font-medium mb-1">Confirm Password</Label>
               <Input
                 type="password"
                 value={formData.confirmPassword}
