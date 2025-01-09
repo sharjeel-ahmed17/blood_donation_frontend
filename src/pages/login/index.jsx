@@ -23,6 +23,7 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50 p-4">
+      <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate blanditiis tempore consequatur nostrum deleniti illo facere, hic fuga veniam dignissimos facilis magni, repellendus ex rem dicta pariatur corporis reiciendis amet.</p>
       <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-bold text-red-600"> Login</CardTitle>
